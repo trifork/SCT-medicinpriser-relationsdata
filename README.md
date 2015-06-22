@@ -1,0 +1,1 @@
+# SCT-medicinpriser-relationsdata
