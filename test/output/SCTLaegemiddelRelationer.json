@@ -1,0 +1,16 @@
+{
+  "sctLaegemiddelRelationer": [
+    {
+      "laegemiddelDefinitionId": "83abeec3-b2c0-4911-bd35-76afeaf8b50a",
+      "sctLaegemiddelkode": "123456789012345675"
+    },
+    {
+      "laegemiddelDefinitionId": "3ced613e-a0c9-49c7-9153-29c425bd8fa3",
+      "sctLaegemiddelkode": "123456789012345676"
+    },
+    {
+      "laegemiddelDefinitionId": "0b1d9190-8834-4b83-a3e4-e0504eac31da",
+      "sctLaegemiddelkode": "123456789012345677"
+    }
+  ]
+}

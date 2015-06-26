@@ -1,0 +1,20 @@
+{
+  "sctAktiveStoffer": [
+    {
+      "sctAktivtStofKode": "223456789012345677",
+      "navn": "Aktivt stof A"
+    },
+    {
+      "sctAktivtStofKode": "223456789012345678",
+      "navn": "Aktivt stof B"
+    },
+    {
+      "sctAktivtStofKode": "223456789012345679",
+      "navn": "Aktivt stof C"
+    },
+    {
+      "sctAktivtStofKode": "223456789012345680",
+      "navn": "Aktivt stof X"
+    }
+  ]
+}

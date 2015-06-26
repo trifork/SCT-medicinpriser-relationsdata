@@ -1,0 +1,16 @@
+{
+  "sctLaegemiddelformer": [
+    {
+      "sctLaegemiddelformkode": "423456789012345678",
+      "navn": "Lægemiddelform A"
+    },
+    {
+      "sctLaegemiddelformkode": "423456789012345689",
+      "navn": "Lægemiddelform B"
+    },
+    {
+      "sctLaegemiddelformkode": "423456789012345680",
+      "navn": "Lægemiddelform X"
+    }
+  ]
+}
