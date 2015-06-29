@@ -82,35 +82,6 @@ public class FullTest {
 				Paths.get("test/output/SCTLaegemiddelformRelationer.json"), 
 				gson.toJson(sctLaegemiddelformRelationer).getBytes());
 		
-
-//		
-//		FormRelationer formRelationer = new FormRelationer(
-//				new FormRelation(423456789012345678L, 423456789012345688L));
-//		Files.write(
-//				Paths.get("test/output/FormRelationer.json"), 
-//				gson.toJson(formRelationer).getBytes());
-//		
-//		Enheder enheder = new Enheder( 
-//				new Enhed(923456789012345678L, "mg", "mg"), 
-//				new Enhed(923456789012345679L, "ml", "ml"));
-//		Files.write(
-//				Paths.get("test/output/Enheder.json"), 
-//				gson.toJson(enheder).getBytes());
-//		
-//		Allergier allergier = new Allergier(
-//				new Allergi(91936005L, "Allergy to penicillin", "Allergi over for penicillin"), 
-//				new Allergi(294500003L, "Allergi over for penicillinase-resistente penicilliner", "Penicillinase-resistant penicillins allergy"),
-//				new Allergi(418344001L, "Allergy to caffeine", "Allergi over for koffein"));
-//		Files.write(
-//				Paths.get("test/output/Allergier.json"), 
-//				gson.toJson(allergier).getBytes());
-//		
-//		AllergiRelationer allergiRelationer = new AllergiRelationer(
-//				new AllergiRelation(91936005L, 294500003L));
-//		Files.write(
-//				Paths.get("test/output/AllergiRelationer.json"), 
-//				gson.toJson(allergiRelationer).getBytes());
-//		
 	}
 
 }
