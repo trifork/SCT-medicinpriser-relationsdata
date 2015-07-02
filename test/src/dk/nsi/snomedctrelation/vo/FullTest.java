@@ -24,26 +24,22 @@ public class FullTest {
 				gson.toJson(version).getBytes());
 		
 		LaegemiddelDefinitioner laegemiddelDefinitioner = new LaegemiddelDefinitioner(
-			new LaegemiddelDefinition("83abeec3-b2c0-4911-bd35-76afeaf8b50a", 28101000115L), 
-			new LaegemiddelDefinition("3ced613e-a0c9-49c7-9153-29c425bd8fa3", null), // Lægemiddeldefinition uden tilsvarende drugId i taksten 
-			new LaegemiddelDefinition("0b1d9190-8834-4b83-a3e4-e0504eac31da", 28101000215L));
+			new LaegemiddelDefinition("DrugID-28101000115", 28101000115L), 
+			new LaegemiddelDefinition("DrugID-28101000215", 28101000215L));
 		Files.write(
 				Paths.get("test/output/LaegemiddelDefinitioner.json"), 
 				gson.toJson(laegemiddelDefinitioner).getBytes());
 		
 		SCTLaegemidler sctLaegemidler = new SCTLaegemidler(
 			new SCTLaegemiddel("123456789012345675", "Lægemiddel 1"),  // Lægemiddel for drugId 28101000115
-			new SCTLaegemiddel("123456789012345676", "Lægemiddel 2"),  // Lægemiddel for lægemiddeldefinition uden tilsvarende drugId i taksten
-			new SCTLaegemiddel("123456789012345677", "Lægemiddel 3"),  // Lægemiddel for drugId 28101000215
-			new SCTLaegemiddel("123456789012345678", "Lægemiddel 4")); // Lægemiddel der ikke er anvendt i lægemiddeldefinition (optræder ikke via relationstabellen)
+			new SCTLaegemiddel("123456789012345677", "Lægemiddel 2")); // Lægemiddel for drugId 28101000215
 		Files.write(
 				Paths.get("test/output/SCTLaegemidler.json"), 
 				gson.toJson(sctLaegemidler).getBytes());
 		
 		SCTLaegemiddelRelationer sctLaegemiddelRelationer = new SCTLaegemiddelRelationer(
-			new SCTLaegemiddelRelation("83abeec3-b2c0-4911-bd35-76afeaf8b50a", "123456789012345675"),
-			new SCTLaegemiddelRelation("3ced613e-a0c9-49c7-9153-29c425bd8fa3", "123456789012345676"),
-			new SCTLaegemiddelRelation("0b1d9190-8834-4b83-a3e4-e0504eac31da", "123456789012345677"));
+			new SCTLaegemiddelRelation("DrugID-28101000115", "123456789012345675"),
+			new SCTLaegemiddelRelation("DrugID-28101000215", "123456789012345677"));
 		Files.write(
 				Paths.get("test/output/SCTLaegemiddelRelationer.json"), 
 				gson.toJson(sctLaegemiddelRelationer).getBytes());		
@@ -51,33 +47,30 @@ public class FullTest {
 		SCTAktiveStoffer sctAktiveStoffer = new SCTAktiveStoffer( 
 				new SCTAktivtStof("223456789012345677", "Aktivt stof A"), 
 				new SCTAktivtStof("223456789012345678", "Aktivt stof B"), 
-				new SCTAktivtStof("223456789012345679", "Aktivt stof C"),
-				new SCTAktivtStof("223456789012345680", "Aktivt stof X"));
+				new SCTAktivtStof("223456789012345679", "Aktivt stof C"));
 		Files.write(
 				Paths.get("test/output/SCTAktiveStoffer.json"), 
 				gson.toJson(sctAktiveStoffer).getBytes());
 		
 		SCTAktivtStofRelationer sctAktivtStofRelationer = new SCTAktivtStofRelationer(
-				new SCTAktivtStofRelation("83abeec3-b2c0-4911-bd35-76afeaf8b50a", "223456789012345677"),  // Lægemiddel 1 indeholder både aktivt stof A 
-				new SCTAktivtStofRelation("83abeec3-b2c0-4911-bd35-76afeaf8b50a", "223456789012345678"),  //                       ... og aktivt stof B  
-				new SCTAktivtStofRelation("3ced613e-a0c9-49c7-9153-29c425bd8fa3", "223456789012345677"),  // Lægemiddel 2 indeholder kun aktivt stof A  
-				new SCTAktivtStofRelation("0b1d9190-8834-4b83-a3e4-e0504eac31da", "223456789012345679")); // Lægemiddel 3 indeholder kun aktivt stof C  
+				new SCTAktivtStofRelation("DrugID-28101000115", "223456789012345677"),  // Lægemiddel 1 indeholder både aktivt stof A 
+				new SCTAktivtStofRelation("DrugID-28101000115", "223456789012345678"),  //                       ... og aktivt stof B  
+				new SCTAktivtStofRelation("DrugID-28101000215", "223456789012345679")); // Lægemiddel 2 indeholder kun aktivt stof C  
 		Files.write(
 				Paths.get("test/output/SCTAktivtStofRelationer.json"), 
 				gson.toJson(sctAktivtStofRelationer).getBytes());
 		
 		SCTLaegemiddelformer sctLaegemiddelformer = new SCTLaegemiddelformer(
 				new SCTLaegemiddelform("423456789012345678", "Lægemiddelform A"),
-				new SCTLaegemiddelform("423456789012345689", "Lægemiddelform B"), 
-				new SCTLaegemiddelform("423456789012345680", "Lægemiddelform X"));
+				new SCTLaegemiddelform("423456789012345689", "Lægemiddelform B")); 
 		Files.write(
 				Paths.get("test/output/SCTLaegemiddelformer.json"), 
 				gson.toJson(sctLaegemiddelformer).getBytes());
 		
 		
 		SCTLaegemiddelformRelationer sctLaegemiddelformRelationer = new SCTLaegemiddelformRelationer(
-				new SCTLaegemiddelformRelation("83abeec3-b2c0-4911-bd35-76afeaf8b50a", "423456789012345678"),  // Lægemiddel 1 har lægemiddelform A
-				new SCTLaegemiddelformRelation("3ced613e-a0c9-49c7-9153-29c425bd8fa3", "423456789012345689")); // Lægemiddel 2 har lægemiddelform B
+				new SCTLaegemiddelformRelation("DrugID-28101000115", "423456789012345678"),  // Lægemiddel 1 har lægemiddelform A
+				new SCTLaegemiddelformRelation("DrugID-28101000215", "423456789012345689")); // Lægemiddel 2 har lægemiddelform B
 		Files.write(
 				Paths.get("test/output/SCTLaegemiddelformRelationer.json"), 
 				gson.toJson(sctLaegemiddelformRelationer).getBytes());

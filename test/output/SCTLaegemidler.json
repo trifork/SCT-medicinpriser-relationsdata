@@ -5,16 +5,8 @@
       "navn": "Lægemiddel 1"
     },
     {
-      "sctLaegemiddelkode": "123456789012345676",
-      "navn": "Lægemiddel 2"
-    },
-    {
       "sctLaegemiddelkode": "123456789012345677",
-      "navn": "Lægemiddel 3"
-    },
-    {
-      "sctLaegemiddelkode": "123456789012345678",
-      "navn": "Lægemiddel 4"
+      "navn": "Lægemiddel 2"
     }
   ]
 }

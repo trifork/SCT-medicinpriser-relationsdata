@@ -1,19 +1,15 @@
 {
   "sctAktivtStofRelationer": [
     {
-      "laegemiddelDefinitionId": "83abeec3-b2c0-4911-bd35-76afeaf8b50a",
+      "laegemiddelDefinitionId": "DrugID-28101000115",
       "aktivtStofKode": "223456789012345677"
     },
     {
-      "laegemiddelDefinitionId": "83abeec3-b2c0-4911-bd35-76afeaf8b50a",
+      "laegemiddelDefinitionId": "DrugID-28101000115",
       "aktivtStofKode": "223456789012345678"
     },
     {
-      "laegemiddelDefinitionId": "3ced613e-a0c9-49c7-9153-29c425bd8fa3",
-      "aktivtStofKode": "223456789012345677"
-    },
-    {
-      "laegemiddelDefinitionId": "0b1d9190-8834-4b83-a3e4-e0504eac31da",
+      "laegemiddelDefinitionId": "DrugID-28101000215",
       "aktivtStofKode": "223456789012345679"
     }
   ]

@@ -1,11 +1,11 @@
 {
   "sctLaegemiddelformRelationer": [
     {
-      "laegemiddelDefinitionId": "83abeec3-b2c0-4911-bd35-76afeaf8b50a",
+      "laegemiddelDefinitionId": "DrugID-28101000115",
       "sctLaegemiddelformkode": "423456789012345678"
     },
     {
-      "laegemiddelDefinitionId": "3ced613e-a0c9-49c7-9153-29c425bd8fa3",
+      "laegemiddelDefinitionId": "DrugID-28101000215",
       "sctLaegemiddelformkode": "423456789012345689"
     }
   ]
